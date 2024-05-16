@@ -1,0 +1,22 @@
+
+.title-det{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.container-details{
+  text-align: left;
+}
+
+.button-det{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+}
+.container-details td{
+  text-align: left;
+  margin-left: 25px;
+}
+
+

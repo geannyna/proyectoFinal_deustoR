@@ -1,0 +1,264 @@
+:root{
+  
+  --color-fondo-nav: linear-gradient(rgba(0, 0, 0, 0.863), rgba(63, 62, 62, 0.708));
+
+   --color-fondo-footer: rgb(52, 52, 52);
+  --color-letra-nav:  rgb(67, 241, 241);
+  --color-letra:  rgb(3, 82, 82);
+  --color-border:  rgb(3, 82, 82);
+  --color-border-back:  rgb(113, 113, 113);
+  --color-button-fondo: rgba(224, 224, 224, 0.858);
+  --color-button-border-delete: rgb(160, 30, 1);
+  --color-button-border-back: rgba(96, 96, 96, 0.895);
+  --color-button-hover-letra: white;
+  --color-button-hover-fondo: rgba(12, 154, 154, 0.753);
+  --color-button-hover-border: white;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background:
+  linear-gradient(-46deg, rgba(163, 162, 160, 0.18) 39%, rgba(70, 70, 70, 0.772) 100%) no-repeat,
+url(../public/img/cepillo1.png) center no-repeat,
+  rgba(166, 166, 166, 0.326);
+  background-size: cover;
+  width: auto;
+  height: 960px;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items:center; 
+  margin-bottom: 15px;
+}
+.mi-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  width: auto;
+  background: var(--color-fondo-nav);
+  padding: 5px;
+}
+
+.mi-nav .clinic-name, .footer .clinic-name {
+  color: var(--color-letra-nav);
+  margin-left: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-item, .mi-nav .nav-link{
+  text-decoration: none;
+  color: var(--color-letra-nav);
+  font-size: medium;
+}
+
+.button, .button-back{ 
+background: var(--color-button-fondo);
+color: var(--color-letra);
+font-size: 18px;
+font-weight: bold;
+border: 2px solid var(--color-border);
+padding: 8px 30px;
+text-decoration: none;
+height: 50px;
+width: auto;
+text-align: center;
+margin-top: 40px;
+margin-left: 15px;
+border-radius: 25px;
+}
+
+.button-back{
+  border-color: var(--color-button-border-back);
+  color: var(--color-button-border-back);
+}
+.button-sub{
+background: var(--color-letra-nav);
+color: var(--color-letra);
+border-radius: 5px;
+font-size: larger;
+font-weight: bolder;
+}
+.button-back:hover{
+  background-color: var(--color-button-border-back);
+  color: var(--color-button-hover-letra);
+}
+a{
+  text-decoration: none;
+  color: var(--color-letra);
+}
+a:hover{
+  color: var(--color-button-hover-letra);
+}
+.button:hover{
+  background: var(--color-button-hover-fondo);
+  color: var(--color-button-hover-letra);
+  border: transparent;
+}
+.update-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.buscar{
+  font-size: medium;
+  background: rgb(219, 219, 219);
+  border-radius: 8px;
+}
+.container-buscar{
+  margin-top: 0px;
+}
+.container-details{
+  margin-top: 10%;
+  width: 500px;
+  height:  auto;
+}
+.button-delete{
+  background-color: var(--color-button-fondo);
+  color: var(--color-button-border-delete);
+  font-size: 18px;
+  font-weight: bold;
+  width: auto;
+  height: 20px;
+  border-radius: 15px;
+  padding: 8px 30px;
+  text-decoration: none;
+  height: 40px;
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 5px;
+}
+section{
+  color: var(--color-letra)--color-fondo-nav;
+  background-color: var(--color-button-hover-fondo);
+  text-align: center;
+  width: 100%;
+}
+.message-ok{
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.update-icon, .details-icon{
+margin-right: 20px;
+color: rgb(3, 87, 87);
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  background: var(--color-fondo-footer);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-letra-nav);
+  padding: 15px;
+  bottom: 0;
+  position:relative;
+
+}
+.patient-list{
+  max-height: calc(100vh - 60px);
+  margin-top: 10%;
+}
+
+.patient-table{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 1200px;
+  height: auto;
+}
+.table-show{
+  width: 100%;
+  margin-bottom: 15%;
+}
+thead{
+  border: 2px solid rgb(4, 35, 35);
+  border-bottom-color: rgb(9, 132, 132);
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  text-align: center;
+  
+}
+table{
+  background-color:  rgba(27, 191, 191, 0.785);
+  border-radius: 8px;
+  padding:5px;
+}
+
+th, td{
+  width: 200px; 
+  padding: 5px;
+  text-align: center;
+}
+
+ input{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 25px;
+  width: 300px;
+  border-radius: 5px;
+  border: transparent;
+  font-size: 18px;
+  padding: 15px;
+}  
+
+.form{
+  margin-top: 3%;
+  text-align: right;
+}
+.form-add{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 10px;
+}
+label{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 2px;
+  color: rgb(1, 44, 42);
+
+}
+.label-details{
+  font-weight:normal;
+  margin-left: 10px;
+}
+.form-label{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 15px;
+}
+.details-link {
+  text-decoration: none;
+  color: #ac170c; 
+}
+.details-icon {
+  color: #1fb512; 
+}
+
+ul{
+  list-style-type: none;
+  font-size: 20px;
+}
+.title{
+  text-align: center;
+  font-size: 27px;
+  margin-top: 40px;
+}
+
+
